@@ -257,6 +257,35 @@ body {
     color: #e74c3c;
 }
 
+.news-links {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.news-link {
+    background: transparent;
+    color: #e74c3c;
+    padding: 4px 12px;
+    border: 1px solid #e74c3c;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.news-link:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.news-link i {
+    font-size: 0.7rem;
+}
+
 /* Publications Section */
 .publications-list {
     display: flex;
