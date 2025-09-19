@@ -226,6 +226,7 @@ body {
     gap: var(--space-md);
     flex-wrap: wrap;
     margin-top: var(--space-lg);
+    justify-content: center;
 }
 
 .social-link {
