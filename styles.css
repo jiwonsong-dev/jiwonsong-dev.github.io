@@ -261,29 +261,33 @@ body {
     margin-top: 10px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 .news-link {
-    background: transparent;
-    color: #e74c3c;
-    padding: 4px 12px;
-    border: 1px solid #e74c3c;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 0.8rem;
+    background: transparent !important;
+    color: #e74c3c !important;
+    padding: 6px 14px;
+    border: 1.5px solid #e74c3c;
+    border-radius: 15px;
+    text-decoration: none !important;
+    font-size: 0.85rem;
+    font-weight: 500;
     transition: all 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
 }
 
 .news-link:hover {
-    background: #e74c3c;
-    color: white;
+    background: #e74c3c !important;
+    color: white !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
 }
 
 .news-link i {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
 }
 
 /* Publications Section */
@@ -518,13 +522,15 @@ body {
     
     .education-item,
     .publication-item,
-    .experience-item {
+    .experience-item,
+    .news-item {
         flex-direction: column;
         gap: 10px;
     }
     
     .education-period,
-    .experience-period {
+    .experience-period,
+    .news-date {
         align-self: flex-start;
         min-width: auto;
     }
