@@ -91,6 +91,20 @@
                     <div class="publication-year">2025</div>
                     <div class="publication-venue">Preprint</div>
                     <div class="publication-content">
+                        <h3>LiteStage: Latency-aware Layer Skipping for Multi-stage Reasoning</h3>
+                        <p class="authors">Beomseok Kang, Jiwon Song, Jae-Joon Kim</p>
+                        <p class="venue-info">arXiv preprint arXiv:2510.14211</p>
+                        <div class="publication-links">
+                            <a href="https://arxiv.org/abs/2510.14211" class="pub-link">Paper</a>
+                            <!-- <a href="https://github.com/jiwonsong-dev/ReasoningPathCompression" class="pub-link">Code</a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="publication-item">
+                    <div class="publication-year">2025</div>
+                    <div class="publication-venue">Preprint</div>
+                    <div class="publication-content">
                         <h3>Reasoning Path Compression: Compressing Generation Trajectories for Efficient LLM Reasoning</h3>
                         <p class="authors">Jiwon Song, Dongwon Jo, Yulhwa Kim, Jae-Joon Kim</p>
                         <p class="venue-info">arXiv preprint arXiv:2505.13866</p>
@@ -265,6 +279,12 @@
                     mobileMenuToggle.classList.remove('active');
                     navLinks.classList.remove('active');
                 }
+            });
+
+            // Bold only 'Jiwon Song' inside publication authors
+            const authorParas = document.querySelectorAll('.publication-item .authors');
+            authorParas.forEach(p => {
+                p.innerHTML = p.innerHTML.replace(/(Jiwon Song)(\*)?/g, '<strong>$1</strong>$2');
             });
         });
     </script>
