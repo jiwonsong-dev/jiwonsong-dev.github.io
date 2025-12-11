@@ -68,20 +68,7 @@
         <!-- News Section -->
         <section class="section" id="news">
             <h2 class="section-title">News</h2>
-            <div class="news-list">
-                <div class="news-item">
-                    <div class="news-date">Sep 18th, 2025</div>
-                    <div class="news-content">
-                        <p>🎉 <strong>Reasoning Path Compression</strong> is accepted to <strong>NeurIPS 2025</strong>!</p>
-                        <div class="news-links">
-                            <a href="https://neurips.cc/virtual/2025/poster/119647" class="news-link" target="_blank">
-                                <i class="fas fa-external-link-alt"></i>
-                                NeurIPS
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <div class="news-list"></div>
         </section>
 
         <!-- Publications Section -->
@@ -107,7 +94,7 @@
                     <div class="publication-content">
                         <h3>Reasoning Path Compression: Compressing Generation Trajectories for Efficient LLM Reasoning</h3>
                         <p class="authors">Jiwon Song, Dongwon Jo, Yulhwa Kim, Jae-Joon Kim</p>
-                        <p class="venue-info">The Thirty-Ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)</p>
+                        <p class="venue-info">The 39th Annual Conference on Neural Information Processing Systems (NeurIPS 2025)</p>
                         <div class="publication-links">
                             <a href="https://arxiv.org/abs/2505.13866" class="pub-link">Paper</a>
                             <a href="https://github.com/jiwonsong-dev/ReasoningPathCompression" class="pub-link">Code</a>
@@ -286,6 +273,13 @@
             authorParas.forEach(p => {
                 p.innerHTML = p.innerHTML.replace(/(Jiwon Song)(\*)?/g, '<strong>$1</strong>$2');
             });
+
+            // Hide News section if there are no news items
+            const newsSection = document.querySelector('#news');
+            const newsList = newsSection ? newsSection.querySelector('.news-list') : null;
+            if (newsSection && newsList && newsList.children.length === 0) {
+                newsSection.style.display = 'none';
+            }
         });
     </script>
 </body>
