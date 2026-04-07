@@ -543,8 +543,9 @@ body {
 }
 
 .publication-item {
-    display: flex;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 70px minmax(0, 1fr);
+    column-gap: 20px;
     align-items: flex-start;
     margin-bottom: 15px;
 }
@@ -559,25 +560,41 @@ body {
     padding-top: 2px;
 }
 
+.publication-content {
+    min-width: 0;
+}
+
+.publication-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px 12px;
+    margin-bottom: 8px;
+}
+
 .publication-venue {
     background: #e8f4fd;
     color: #2980b9;
-    padding: 6px 12px;
+    padding: 4px 10px;
     border-radius: 12px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 500;
-    white-space: nowrap;
-    min-width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    max-width: 100%;
     text-align: center;
-    flex-shrink: 0;
+    line-height: 1.2;
 }
 
 .publication-content h3 {
     font-size: 1rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 8px;
+    margin-bottom: 0;
     line-height: 1.4;
+    flex: 1 1 320px;
 }
 
 .publication-content .authors {
@@ -809,11 +826,21 @@ body {
     }
     
     .education-item,
-    .publication-item,
     .experience-item,
     .news-item {
         flex-direction: column;
         gap: 10px;
+    }
+
+    .publication-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .publication-header {
+        gap: 6px 10px;
+        margin-bottom: 6px;
     }
     
     .education-period,
@@ -824,8 +851,7 @@ body {
     }
     
     .publication-venue {
-        align-self: flex-start;
-        min-width: auto;
+        font-size: 0.72rem;
     }
     
     .interests-grid {
