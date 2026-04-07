@@ -566,9 +566,9 @@ body {
 
 .publication-header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: flex-start;
-    gap: 8px 12px;
+    gap: 6px;
     margin-bottom: 8px;
 }
 
@@ -594,7 +594,7 @@ body {
     color: #2c3e50;
     margin-bottom: 0;
     line-height: 1.4;
-    flex: 1 1 320px;
+    width: 100%;
 }
 
 .publication-content .authors {
@@ -839,7 +839,7 @@ body {
     }
 
     .publication-header {
-        gap: 6px 10px;
+        gap: 5px;
         margin-bottom: 6px;
     }
     
