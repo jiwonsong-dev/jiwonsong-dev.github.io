@@ -246,6 +246,21 @@ body {
     letter-spacing: -0.02em;
 }
 
+.profile-kicker {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.7rem;
+    margin-bottom: 0.85rem;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.08);
+    border: 1px solid rgba(37, 99, 235, 0.12);
+    color: var(--primary-dark);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
 .profile-info .title {
     font-size: 1.15rem;
     color: var(--gray-700);
@@ -258,6 +273,15 @@ body {
     color: var(--gray-500);
     margin-bottom: var(--space-md);
     line-height: 1.5;
+}
+
+.research-tagline {
+    font-size: 1.08rem;
+    line-height: 1.6;
+    color: var(--gray-800);
+    font-weight: 500;
+    max-width: 620px;
+    margin-bottom: var(--space-md);
 }
 
 .profile-meta {
@@ -396,6 +420,24 @@ body {
     border-radius: var(--radius-sm);
 }
 
+.section-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-bottom: var(--space-xl);
+}
+
+.section-heading .section-title {
+    margin-bottom: 0;
+}
+
+.section-lede {
+    max-width: 680px;
+    color: var(--gray-600);
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+
 .section-featured {
     background:
         linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(248, 251, 255, 0.96));
@@ -414,22 +456,27 @@ body {
 .education-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
 }
 
 .education-item {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     align-items: flex-start;
+    padding: 1rem 1.1rem;
+    background: rgba(248, 250, 252, 0.82);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 18px;
 }
 
 .education-period {
-    background: #3498db;
-    color: white;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-dark);
+    border: 1px solid rgba(37, 99, 235, 0.12);
     padding: 6px 12px;
     border-radius: 15px;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 700;
     white-space: nowrap;
     min-width: 120px;
     text-align: center;
@@ -590,6 +637,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    position: relative;
+}
+
+.publications-list::before {
+    content: '';
+    position: absolute;
+    top: 0.35rem;
+    bottom: 0.35rem;
+    left: 78px;
+    width: 1px;
+    background: linear-gradient(180deg, rgba(37, 99, 235, 0.22), rgba(148, 163, 184, 0.12));
+    pointer-events: none;
 }
 
 .publication-item {
@@ -598,6 +657,7 @@ body {
     column-gap: 20px;
     align-items: flex-start;
     margin-bottom: 0;
+    position: relative;
 }
 
 .publication-year {
@@ -613,6 +673,21 @@ body {
 
 .publication-content {
     min-width: 0;
+    position: relative;
+    padding: 0.1rem 0 0.1rem 1.35rem;
+}
+
+.publication-content::before {
+    content: '';
+    position: absolute;
+    top: 0.42rem;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: white;
+    border: 2px solid rgba(37, 99, 235, 0.62);
+    box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.08);
 }
 
 .publication-header {
@@ -622,6 +697,7 @@ body {
     gap: 6px;
     margin-bottom: 9px;
 }
+
 
 .publication-venue {
     background: rgba(37, 99, 235, 0.08);
@@ -716,31 +792,38 @@ body {
 .experience-list {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 16px;
 }
 
 .experience-item {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     align-items: flex-start;
+    padding: 1rem 1.1rem;
+    background: rgba(248, 250, 252, 0.82);
+    border: 1px solid rgba(226, 232, 240, 0.9);
+    border-radius: 18px;
 }
 
 .experience-period {
-    background: #27ae60;
-    color: white;
+    background: rgba(22, 163, 74, 0.1);
+    color: #15803d;
+    border: 1px solid rgba(22, 163, 74, 0.12);
     padding: 6px 12px;
     border-radius: 15px;
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 700;
     white-space: nowrap;
     min-width: 120px;
     text-align: center;
     flex-shrink: 0;
-    padding-top: 8px;
+    padding-top: 6px;
 }
 
 .experience-period.military {
-    background: #4a5d23;
+    background: rgba(74, 93, 35, 0.12);
+    color: #4a5d23;
+    border-color: rgba(74, 93, 35, 0.14);
 }
 
 .experience-content h3 {
@@ -897,6 +980,11 @@ body {
     .profile-meta {
         justify-content: center;
     }
+
+    .research-tagline,
+    .section-lede {
+        text-align: center;
+    }
     
     .social-links {
         justify-content: center;
@@ -913,6 +1001,18 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         gap: 8px;
+    }
+
+    .publications-list::before {
+        display: none;
+    }
+
+    .publication-content {
+        padding-left: 0;
+    }
+
+    .publication-content::before {
+        display: none;
     }
 
     .publication-header {
@@ -939,6 +1039,10 @@ body {
 @media (max-width: 480px) {
     .profile-info h1 {
         font-size: 1.5rem;
+    }
+
+    .profile-kicker {
+        font-size: 0.72rem;
     }
 
     .meta-pill {
