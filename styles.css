@@ -559,6 +559,10 @@ body {
     font-weight: 500;
 }
 
+.news-content p + p {
+    margin-top: 0.35rem;
+}
+
 .news-content strong {
     color: var(--gray-900);
     font-weight: 700;
