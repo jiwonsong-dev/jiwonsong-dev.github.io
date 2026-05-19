@@ -497,14 +497,14 @@ body {
 .education-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .education-item {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    padding: 0.9rem 1rem;
+    padding: 0.8rem 0.95rem;
     background: rgba(248, 250, 252, 0.82);
     border: 1px solid rgba(226, 232, 240, 0.9);
     border-radius: 18px;
@@ -514,9 +514,9 @@ body {
     background: rgba(37, 99, 235, 0.1);
     color: var(--primary-dark);
     border: 1px solid rgba(37, 99, 235, 0.12);
-    padding: 6px 12px;
+    padding: 5px 10px;
     border-radius: 15px;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     font-weight: 700;
     white-space: nowrap;
     min-width: 120px;
@@ -524,21 +524,22 @@ body {
 }
 
 .education-content h3 {
-    font-size: 1.1rem;
+    font-size: 0.98rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .education-content .institution {
     color: #666;
     margin-bottom: 3px;
+    font-size: 0.88rem;
 }
 
 .education-content .advisor,
 .education-content .details {
     color: #888;
-    font-size: 0.9rem;
+    font-size: 0.82rem;
 }
 
 /* News Section */
@@ -676,7 +677,7 @@ body {
 .publications-list {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     position: relative;
 }
 
@@ -814,7 +815,7 @@ body {
     color: #3498db;
     padding: 2px 9px;
     border: 1px solid rgba(52, 152, 219, 0.7);
-    border-radius: 999px;
+    border-radius: 6px;
     text-decoration: none;
     font-size: 0.72rem;
     font-weight: 600;
@@ -833,14 +834,14 @@ body {
 .experience-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .experience-item {
     display: flex;
     gap: 20px;
     align-items: flex-start;
-    padding: 0.9rem 1rem;
+    padding: 0.8rem 0.95rem;
     background: rgba(248, 250, 252, 0.82);
     border: 1px solid rgba(226, 232, 240, 0.9);
     border-radius: 18px;
@@ -850,15 +851,15 @@ body {
     background: rgba(22, 163, 74, 0.1);
     color: #15803d;
     border: 1px solid rgba(22, 163, 74, 0.12);
-    padding: 6px 12px;
+    padding: 5px 10px;
     border-radius: 15px;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     font-weight: 700;
     white-space: nowrap;
     min-width: 120px;
     text-align: center;
     flex-shrink: 0;
-    padding-top: 6px;
+    padding-top: 5px;
 }
 
 .experience-period.military {
@@ -868,15 +869,16 @@ body {
 }
 
 .experience-content h3 {
-    font-size: 1.1rem;
+    font-size: 0.98rem;
     font-weight: 600;
     color: #2c3e50;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 .experience-content .institution {
     color: #666;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
+    font-size: 0.88rem;
 }
 
 .experience-details {
@@ -889,7 +891,7 @@ body {
     margin-bottom: 4px;
     padding-left: 15px;
     position: relative;
-    font-size: 0.91rem;
+    font-size: 0.84rem;
 }
 
 .experience-details li::before {
