@@ -1053,6 +1053,7 @@ body {
         max-width: 330px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 0.85rem;
         text-align: center;
     }
 
@@ -1066,6 +1067,7 @@ body {
     
     .social-links {
         justify-content: center;
+        margin-bottom: 1.1rem;
     }
     
     .education-item,
@@ -1320,10 +1322,12 @@ body {
     .social-links {
         flex-direction: row;
         align-items: center;
+        margin-bottom: 1.2rem;
     }
     
     .social-link {
-        width: 2.6rem;
+        width: 2.45rem;
+        height: 2.45rem;
         justify-content: center;
     }
 }
